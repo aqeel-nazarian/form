@@ -34,7 +34,7 @@
                </li>
                <li>
                   <label for="messege">Your Messege</label>
-                  <textarea name="messege" id="messege" required minlength="10" maxlength="100"></textarea>
+                  <textarea name="messege" id="messege" required minlength="10" maxlength="100" rows="6"></textarea>
                </li>
             </ul>
          </section>
@@ -49,27 +49,27 @@
          <section>
             <h2>How Should we Reply?</h2>
             <ul>
-               <li>
+               <li class="inline-control">
                   <input type="radio" name="reply" id="reply-phone" value="phone" required>
                   <label for="reply-phone">Call me</label>
                </li>
-               <li>
+               <li class="inline-control">
                   <input type="radio" name="reply" id="reply-email" value="email" required>
                   <label for="reply-email">Send me an E-mail</label>
                </li>
-               <li>
+               <li class="inline-control">
                   <input type="radio" name="reply" id="reply-none" value="none" required>
                   <label for="reply-none">Don't reply</label>
                </li>
             </ul>
          </section>
-         <section>
+         <section class="inline-control">
             <input type="checkbox" name="accept-terms" id="accept-terms" required>
             <label for="accept-terms">Accept Terms</label>
          </section>
-         <section>
-            <button type="clear">Clear</button>
-            <button type="submit">Submit</button>
+         <section id="form-action">
+            <button type="clear" class="btn-empty">Clear</button>
+            <button type="submit" class="btn-filled">Submit</button>
          </section>
       </form>
    </main>
